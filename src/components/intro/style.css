@@ -1,0 +1,61 @@
+.intro-section{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+}
+
+.fs{
+    animation: fsr 2s forwards; 
+}
+
+.fsr{
+    animation: fs 1.5s forwards;  
+}
+
+@keyframes fsr {
+    from{
+        clip-path: inset(0 100% 0 0 );
+    }
+    to{
+        clip-path: inset(0 0 0 0);
+    } 
+}
+
+@keyframes fs {
+    from{
+        clip-path: inset(0 0 0 100%);
+    }
+    to{
+        clip-path: inset(0 0 0 0);
+    } 
+}
+
+.imganim{
+    animation: imganim 8s;
+}
+
+@keyframes imganim {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.title{
+    animation: title-anim 3s;
+}
+
+@keyframes title-anim {
+    from{
+        opacity: 0;
+        filter: blur(4);
+    }
+    to{
+        opacity: 1;
+        filter: blur(0);
+    }
+}

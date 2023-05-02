@@ -1,0 +1,73 @@
+:root{
+  --color: #fff;
+}
+
+.App{
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.sec{
+  scroll-snap-type: start;
+}
+body::-webkit-scrollbar:horizontal{
+  display: none;
+  visibility: hidden;
+}
+
+body{
+  scroll-snap-type: y mandatory;
+}
+
+.colors{
+  color: var(--color);
+  background-color: var(--color);
+  fill: var(--color);
+}
+
+.colors::after{
+  background-color: white;
+}
+
+:root{
+  --bg: #ffffff;
+}
+
+.menu-toggle{
+  display: flex;
+  width: 40px;
+  height: 2px;
+  transition: all .2s;
+}
+
+.menu-toggle::after{
+  content:'';
+  display: flex;
+  width: 25px;
+  height: 2px;
+  background-color: var(--color);
+  margin-top: 7px;
+  margin-left: 15px;
+  transition: all .4s;
+}
+
+.menu-toggle.xshow{
+  width: 40px;
+  height: 2px;
+  transform: rotate(45deg);
+  background: #FFF;
+}
+
+.menu-toggle.xshow::after{
+  content:'';
+  display: flex;
+  width: 40px;
+  height: 2px;
+  margin-top: 0;
+  margin-left: 0;
+  transform: rotate(90deg);
+  background: #FFF;
+}
+
+

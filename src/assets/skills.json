@@ -1,0 +1,70 @@
+{
+    "frontend": [
+        {
+            "name": "HTML",
+            "icon": "SiHtml5"
+        },
+        {
+            "name": "CSS",
+            "icon": "SiCss3"
+        },
+        {
+            "name": "JS",
+            "icon": "SiJavascript"
+        },
+        {
+            "name": "React",
+            "icon": "FaReact"
+        },
+        {
+            "name": "Next",
+            "icon": "SiNextdotjs"
+        },
+        {
+            "name": "Vue",
+            "icon": "TbBrandVue"
+        },
+        {
+            "name": "Tailwind",
+            "icon": "SiTailwindcss"
+        },
+        {
+            "name": "Three",
+            "icon": "SiThreedotjs"
+        },
+        {
+            "name": "TS",
+            "icon": "SiTypescript"
+        }
+    ],
+    "backend": [
+        {
+            "name": "FastApi",
+            "icon": "SiFastapi"
+        },
+        {
+            "name": "Python",
+            "icon": "SiPython"
+        },
+        {
+            "name": "Express",
+            "icon": "SiExpress"
+        },
+        {
+            "name": ".NET",
+            "icon": "SiDotnet"
+        },
+        {
+            "name": "C#",
+            "icon": "SiCsharp"
+        },
+        {
+            "name": "Spring",
+            "icon": "SiSpring"
+        },
+        {
+            "name": "Java",
+            "icon": "FaJava"
+        }
+    ]
+}
