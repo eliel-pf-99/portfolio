@@ -1,0 +1,41 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  font-variation-settings:
+    "wdth" 78.9;
+  position: relative;
+}
+
+.title-home { 
+  margin: 0;
+  font-weight: 100;
+  font-size: 200px;
+  top: 32px;
+  left: 32px;
+  position: absolute;
+}
+
+.title-two-home {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+  .title-home{
+    font-size: 100px;
+    margin-top: 20px;
+  }
+
+  .title-two-home{
+    font-size: 36px;
+    margin-top: 50px;
+  }
+}
