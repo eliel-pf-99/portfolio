@@ -1,5 +1,5 @@
-const Contact = `<div id="contact" class="contact sections">
-    <h1 class="title-contact">Contact me</h1>
+const Contact = language => `<div id="contact" class="contact sections">
+    <h1 class="title-contact">${language.contact.title}</h1>
     <div class="me">
       <img src="https://ee76vrazytu.exactdn.com/wp-content/uploads/2024/03/abcdhe-201.jpg?strip=all&lossy=1&ssl=1" alt="">
       <div class="me-items">

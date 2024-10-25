@@ -112,6 +112,12 @@ body {
   color: var(--background-color)
 }
 
+.menu-text-mob a {
+  text-decoration: none;
+  outline: none;
+  color: var(--background-color)
+}
+
 .box{
   width: 20px;
   height: 20px;
@@ -175,5 +181,13 @@ and (max-width : 480px) {
   .selected.box-circle{
     width: 7.5px;
     height: 7.5px;
+  }
+}
+
+@media only screen 
+and (min-width : 540px) 
+and (max-width : 1024px) {
+  .pag {
+    right: 3%;
   }
 }
