@@ -45,7 +45,7 @@ body {
 
 .menu::after{
   top: 45px;
-  height: 6px;
+  height: 5px;
 }
 
 .menu::after {
@@ -71,7 +71,7 @@ body {
 
 .arrow {
   position: fixed;
-  bottom: 32px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -103,6 +103,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  z-index: 10;
+}
+
+.menu-text a {
+  text-decoration: none;
+  outline: none;
+  color: var(--background-color)
 }
 
 .box{
@@ -121,68 +128,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 9999px;
-}
-
-.contact{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.contact h1{
-  margin: 0;
-}
-
-.title-about{
-  font-size: 70px;
-  font-weight: 900;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.me{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  justify-content: center;
-  align-items: center;
-}
-
-.me img{
-  width: 200px;
-  height: 200px;
-  border-radius: 9999px;
-}
-
-.me-items {
-  display: flex;
-  gap: 32px;
-}
-
-.me-item {
-  border: solid 1px var(--text-color);
-  padding: 15px;
-  border-radius: 5px;
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-  align-items: center;
-}
-
-.me-item i {
-  font-size: 48px;
-}
-
-.me-item a {
-  outline: none;
-  text-decoration: none;
-  color: var(--text-color);
-  font-size: 32px;
-  font-weight: 900;
+  transition: all .3s;
 }
 
 @media only screen 
@@ -215,8 +161,10 @@ and (max-width : 480px) {
 
 
   .pag{
-    top:75%;
-    transform: translateY(-75%);
+    top:80%;
+    transform: translateY(-80%);
+    right: 15px;
+    z-index: 10;
   }
 
   .box{
@@ -227,10 +175,5 @@ and (max-width : 480px) {
   .selected.box-circle{
     width: 7.5px;
     height: 7.5px;
-  }
-
-  .title-contact{
-    font-size: 50px;
-    margin-top: 70px;
   }
 }

@@ -1,0 +1,86 @@
+.contact{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact h1{
+  margin: 0;
+}
+
+.title-contact{
+  font-size: 70px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.me{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.me img{
+  width: 200px;
+  height: 200px;
+  border-radius: 9999px;
+}
+
+.me-items {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.me-item {
+  border: solid 1px var(--text-color);
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.me-item i {
+  font-size: 48px;
+}
+
+.me-item a {
+  outline: none;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 32px;
+  font-weight: 900;
+}
+
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+  .title-contact{
+    font-size: 50px;
+    margin-top: 70px;
+  }
+
+  .me {
+    gap: 25px;
+  }
+
+  .me img{
+    height: 150px;
+    width: 150px;
+  }
+
+  .me-item a{
+    font-size: 24px;
+  }
+}
