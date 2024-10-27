@@ -4,12 +4,13 @@
   font-variation-settings:
     "wdth" 78.9;
   position: relative;
+  height: 100vh;
 }
 
 .title-home { 
   margin: 0;
   font-weight: 100;
-  font-size: 180px;
+  font-size: 150px;
   top: 32px;
   left: 32px;
   position: absolute;

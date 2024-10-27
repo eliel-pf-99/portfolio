@@ -13,7 +13,8 @@ const lang = {
       "home": "home",
       "projects": "projects",
       "about": "about me",
-      "contact":"contact me"
+      "contact":"contact me",
+      "language":"language"
     }
   },
   "pt": {
@@ -34,7 +35,8 @@ const lang = {
       "home": "home",
       "projects": "projetos",
       "about": "sobre mim",
-      "contact":"contato"
+      "contact":"contato",
+      "language":"idioma"
     }
   }
 }
