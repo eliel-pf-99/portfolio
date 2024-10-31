@@ -86,7 +86,6 @@ body {
   100% {
     transform: translateY(0);
   }
-
 }
 
 .arrow img {
@@ -135,6 +134,11 @@ body {
   height: 10px;
   border-radius: 9999px;
   transition: all .3s;
+}
+
+.neon-text{
+  color: yellow;
+  font-weight: 900;
 }
 
 @media only screen 
@@ -190,4 +194,11 @@ and (max-width : 1024px) {
   .pag {
     right: 3%;
   }
+}
+
+.canvas{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }

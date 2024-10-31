@@ -20,7 +20,7 @@ const lang = {
   "pt": {
     "home":{
       "title": "Eu sou Eliel",
-      "content": "um programador."
+      "content": "um <span class='neon-text'>programador</span>."
     },
   "projects": {
     "title": "Projetos"
