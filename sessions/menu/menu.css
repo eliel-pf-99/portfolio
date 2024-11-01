@@ -10,11 +10,10 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  display: none;
 }
 
 .menu-content {
-  opacity: 0;
+  display: none;
 }
 
 .title-menu{

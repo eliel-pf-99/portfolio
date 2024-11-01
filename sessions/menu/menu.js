@@ -11,17 +11,21 @@ const laodFunc = () => {
 
   function closePopup(){
     menu.classList.remove("open")
-    menuPop.animate(animationPopup, {duration: 2000, iterations: 1, fill: "forwards" })
+    
+    menuPop.animate(animationPopup, {duration: 1000, iterations: 1, fill: "forwards" })
     for(let i=0; i < menuContent.length; i++){
       menuContent[i].animate(animationContent, {duration: 500, iterations: 1, fill: "forwards" })
     }
+    setTimeout(() => menuPop.classList.add("menu-content"), 2000);
+    
   }
 
   function openPopup(){
     menu.classList.add("open")
-    menuPop.animate(animationPopup, {duration: 2000, iterations: 1, direction: "reverse", fill:"forwards" })
+    menuPop.classList.remove("menu-content")
+    menuPop.animate(animationPopup, {duration: 1000, iterations: 1, direction: "reverse", fill:"forwards" })
     for(let i=0; i < menuContent.length; i++){
-      menuContent[i].animate(animationContent, {duration: 2500, iterations: 1, fill: "forwards", direction: "reverse" })
+      menuContent[i].animate(animationContent, {duration: 500, iterations: 1, fill: "forwards", direction: "reverse" })
     }
   }
 
@@ -86,8 +90,8 @@ const laodFunc = () => {
 }
 const Menu = data => {
   return (`
-  <div class="menu-popup" id="menu-popup">
-    <h1 class="title-menu menu-content">MENU</h1>
+  <div class="menu-popup menu-content" id="menu-popup">
+    <h1 class="title-menu">MENU</h1>
     <div class="menu-items menu-content ">
       <div class="menu-item">
         <div class="menu-text">

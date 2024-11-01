@@ -1,5 +1,6 @@
 .home {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   font-variation-settings:
     "wdth" 78.9;
@@ -9,28 +10,27 @@
 
 .title-home { 
   margin: 0;
-  font-weight: 100;
+  font-weight: 900;
   font-size: 150px;
   top: 32px;
   left: 32px;
-  position: absolute;
+  text-align: center;
+  color: black;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
 .title-two-home {
   font-style: italic;
   font-weight: 900;
   font-size: 48px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
 }
 
 .name{
-  color: yellow;
-  font-weight: 900;
+  color: red;
 }
+
 
 @media only screen 
 and (min-width : 320px) 

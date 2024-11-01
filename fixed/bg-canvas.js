@@ -75,7 +75,7 @@ canvaSize();
 window.addEventListener('resize', canvaSize);
 
 function init(){
-  for(let i=0; i < 100; i++){
+  for(let i=0; i < 200; i++){
     const p = new Particle();
     p.draw(ctx);
     particles.push(p);
