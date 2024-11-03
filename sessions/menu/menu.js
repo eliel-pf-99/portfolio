@@ -16,7 +16,8 @@ const laodFunc = () => {
     for(let i=0; i < menuContent.length; i++){
       menuContent[i].animate(animationContent, {duration: 500, iterations: 1, fill: "forwards" })
     }
-    setTimeout(() => menuPop.classList.add("menu-content"), 2000);
+    // Promise.all(menuPop.getAnimations().map(animation => animation.finished)).then(() => menuPop.classList.add("menu-content"));
+    
     
   }
 

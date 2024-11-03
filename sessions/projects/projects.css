@@ -9,6 +9,11 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 .projects{
   display: flex;
   flex-direction: column;
