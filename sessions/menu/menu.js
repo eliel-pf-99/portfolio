@@ -50,17 +50,26 @@ const laodFunc = () => {
     );
   }
 
+  function jumpSection(elem, sections){
+    elem.addEventListener('click', () => {
+
+    });
+  }
+
   document.addEventListener('scroll', () => {
     const elements = document.querySelectorAll(".sections");
     const pags = document.querySelectorAll(".box-circle");
     const pags_mob = document.querySelectorAll(".menu-cir");
     const pags_menu = document.querySelectorAll(".menu-select");
+    const arrow = document.querySelector(".arrow");
     for(let i=0; i < elements.length; i++){
       if(isVisible(elements[i])){
         handlePagination(pags, i, "selected");
         handlePagination(pags_menu, i, "selected-mob");
         handlePagination(pags_mob, i, "selected-mob");
+        
         if(elements[i].classList.contains("contact")){
+          arrow.setAttribute('href', `#${elements[i-1].id}`)
           if(arrowState == "down"){
             arrowRotate("normal");
             arrowState = "up"
@@ -72,6 +81,7 @@ const laodFunc = () => {
             arrowRotate("reverse");
             arrowState = "down";
           }
+          arrow.setAttribute('href', `#${elements[i+1].id}`)
         }
       }
     }

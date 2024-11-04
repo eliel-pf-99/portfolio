@@ -1,9 +1,9 @@
 const Fixed = () => {
   return (`
     <div id="menu" class="menu"></div>
-  <div class="arrow">
+  <a href="#home" class="arrow">
     <img src="./public/seta.svg" alt="arrow">
-  </div>
+  </a>
   <div class="pag">
     <a href="#home" class="box">
       <div  id="elem1" class="selected box-circle"></div>
